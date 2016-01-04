@@ -1,0 +1,75 @@
+3:5 ***ERROR*** Multiply declared identifier
+5:6 ***ERROR*** Multiply declared identifier
+10:8 ***ERROR*** Multiply declared identifier
+22:5 ***ERROR*** Multiply declared identifier
+27:2 ***ERROR*** Undeclared identifier
+28:2 ***ERROR*** Undeclared identifier
+31:2 ***ERROR*** Dot-access of non-struct type
+34:13 ***ERROR*** Invalid struct field name
+34:13 ***ERROR*** Dot-access of non-struct type
+39:21 ***ERROR*** Non-function declared void
+40:7 ***ERROR*** Non-function declared void
+44:6 ***ERROR*** Non-function declared void
+44:6 ***ERROR*** Multiply declared identifier
+49:2 ***ERROR*** Undeclared identifier
+50:2 ***ERROR*** Undeclared identifier
+50:9 ***ERROR*** Undeclared identifier
+50:17 ***ERROR*** Undeclared identifier
+51:2 ***ERROR*** Undeclared identifier
+51:9 ***ERROR*** Undeclared identifier
+51:17 ***ERROR*** Undeclared identifier
+52:2 ***ERROR*** Undeclared identifier
+52:9 ***ERROR*** Undeclared identifier
+52:17 ***ERROR*** Undeclared identifier
+53:2 ***ERROR*** Undeclared identifier
+53:9 ***ERROR*** Undeclared identifier
+53:17 ***ERROR*** Undeclared identifier
+54:2 ***ERROR*** Undeclared identifier
+54:10 ***ERROR*** Undeclared identifier
+55:2 ***ERROR*** Undeclared identifier
+55:9 ***ERROR*** Undeclared identifier
+55:18 ***ERROR*** Undeclared identifier
+56:2 ***ERROR*** Undeclared identifier
+56:9 ***ERROR*** Undeclared identifier
+56:18 ***ERROR*** Undeclared identifier
+57:2 ***ERROR*** Undeclared identifier
+57:9 ***ERROR*** Undeclared identifier
+57:18 ***ERROR*** Undeclared identifier
+58:2 ***ERROR*** Undeclared identifier
+58:9 ***ERROR*** Undeclared identifier
+58:18 ***ERROR*** Undeclared identifier
+59:2 ***ERROR*** Undeclared identifier
+59:9 ***ERROR*** Undeclared identifier
+59:18 ***ERROR*** Undeclared identifier
+60:2 ***ERROR*** Undeclared identifier
+60:9 ***ERROR*** Undeclared identifier
+60:18 ***ERROR*** Undeclared identifier
+61:2 ***ERROR*** Undeclared identifier
+61:9 ***ERROR*** Undeclared identifier
+61:18 ***ERROR*** Undeclared identifier
+62:2 ***ERROR*** Undeclared identifier
+62:9 ***ERROR*** Undeclared identifier
+62:18 ***ERROR*** Undeclared identifier
+63:2 ***ERROR*** Undeclared identifier
+63:10 ***ERROR*** Undeclared identifier
+64:2 ***ERROR*** Undeclared identifier
+64:10 ***ERROR*** Undeclared identifier
+64:18 ***ERROR*** Undeclared identifier
+65:2 ***ERROR*** Undeclared identifier
+65:9 ***ERROR*** Undeclared identifier
+65:18 ***ERROR*** Undeclared identifier
+65:25 ***ERROR*** Undeclared identifier
+66:2 ***ERROR*** Undeclared identifier
+66:9 ***ERROR*** Undeclared identifier
+66:17 ***ERROR*** Undeclared identifier
+67:2 ***ERROR*** Undeclared identifier
+67:9 ***ERROR*** Undeclared identifier
+67:17 ***ERROR*** Undeclared identifier
+67:25 ***ERROR*** Undeclared identifier
+68:2 ***ERROR*** Undeclared identifier
+68:9 ***ERROR*** Undeclared identifier
+68:15 ***ERROR*** Undeclared identifier
+68:21 ***ERROR*** Undeclared identifier
+68:27 ***ERROR*** Undeclared identifier
+68:33 ***ERROR*** Undeclared identifier
+Errors occured during name analysis

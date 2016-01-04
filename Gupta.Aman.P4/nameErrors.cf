@@ -1,0 +1,69 @@
+int z;
+int x;
+int x;
+bool y;
+bool y;
+
+struct hello{
+	int mem;
+};
+struct hello{
+	int hi;
+};
+
+struct hello stInstance;
+
+int func(){
+	int field;
+	field = 0;
+	return 1;
+}
+
+int func(){
+}
+
+//Undeclared identifier and function
+int main(){
+	nox=0;
+	nofunc();
+
+//Dot-access of non-struct type
+	x.mem =0;
+
+//invalid struct dot access and invalid struct field name
+	stInstance.nothing.bad = 0;
+
+}
+
+//Non-function declared void
+void voidParam(void x){
+	void badVoid;
+}
+
+//test for non function void
+void x;
+
+
+//undeclared identifier
+void tstfunc(){
+	flag = true;
+	para = local + term;
+	para = local - term;
+	para = local * term;
+	para = local / term;
+	para = !local;
+	para = local && term;
+	para = local || term;
+	flag = local == term;
+	flag = local != term;
+	flag = local >  term;
+	flag = local <  term;
+	flag = local >= term;
+	flag = local <= term;
+	para = -local;
+	para = -local + term;
+	para = local - -local /term;
+	para = local = term;
+	para = local = local = term;
+	para = local-local*local/local+local;
+}

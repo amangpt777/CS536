@@ -1,0 +1,105 @@
+bool bbb;
+int ret;
+struct S { int a; };
+struct S t;
+struct hello { int z; bool y; };
+
+void f(int p1, bool p2) {
+}
+
+int f1() {
+    return ret;
+}
+
+bool f2() {
+    return bbb;
+}
+
+int function(int para, bool para2){
+        int local;
+        bool flag;
+        struct hello st;
+        int term;
+        cout << "test decls";
+        flag = true;
+        para = local + term;
+        para = local - term;
+        para = local * term;
+        para = local / term;
+        flag = local == term;
+        flag = local != term;
+        flag = local >  term;
+        flag = local <  term;
+        flag = local >= term;
+        flag = local <= term;
+        para = -local;
+        para = -local + term;
+        para = local - -local /term;
+        para = local-local*local/local+local;
+        local =  local + local *local / local - local;
+        local++;
+        term --;
+        st.z = 0;
+        st.y = true;
+
+        if(para == local) {}
+
+        if(true){
+                int tstIfDecl;
+                int tstIfDecl1;
+                tstIfDecl = tstIfDecl1;
+        }
+        if(false){
+                int testIfDecl;bool tstIfDeclBool;
+        }
+        if(local < term){
+                bool tstIfElseDecl;
+        } else {
+                bool tstIfElseDecl;
+        }
+
+        while(local >term){
+        }
+
+        while(local <= term){
+                int tstWhileDecl;
+                bool tstWhileDeclBool;
+                cin >> term;
+        }
+
+        while(true){}
+        while(false){
+                int tstRecursive;
+                while(true){
+                        cout << "second level";
+                        if(true){
+                                term++;
+                                cout <<  "should be stmts";
+                                local = term;
+                        }
+                }
+        }
+
+        cout << "test return";
+        return term+local;
+}
+
+
+void main() {
+    int aaa;
+
+    while(aaa < 2) {
+        f(2, bbb);
+    }
+
+    aaa = f1() + f1();
+    bbb = f2();
+
+    f1();
+    cout << f1();
+
+    t.a = 5;
+    cout << t.a;
+
+}
+

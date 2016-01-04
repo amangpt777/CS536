@@ -1,0 +1,104 @@
+	.data
+	.align 2
+_x:	.space 4	# null
+	.text
+_g:
+	sw    $ra, 0($sp)	#PUSH
+	subu  $sp, $sp, 4
+	sw    $fp, 0($sp)	#PUSH
+	subu  $sp, $sp, 4
+	addu  $fp, $sp, 8
+	subu  $sp, $sp, 0		#Function entry finished
+	li    $t0, 4
+	sw    $t0, 0($sp)	#PUSH
+	subu  $sp, $sp, 4
+	la    $t0, _x
+	sw    $t0, 0($sp)	#PUSH
+	subu  $sp, $sp, 4
+	lw    $t0, 4($sp)	#POP
+	addu  $sp, $sp, 4
+	lw    $t1, 4($sp)
+	sw    $t1, 0($t0)
+	lw    $t0, 4($sp)	#POP
+	addu  $sp, $sp, 4
+.L0:
+	lw    $ra, 0($fp)	#Load ra
+	move  $t0, $fp		#Save control link
+	lw    $fp, -4($fp)	#Restore FP
+	move  $sp, $t0
+	jr    $ra		#Function exit finished
+	.text
+_f1:
+	sw    $ra, 0($sp)	#PUSH
+	subu  $sp, $sp, 4
+	sw    $fp, 0($sp)	#PUSH
+	subu  $sp, $sp, 4
+	addu  $fp, $sp, 8
+	subu  $sp, $sp, -4		#Function entry finished
+	jal   _g
+	sw    $v0, 0($sp)	#PUSH
+	subu  $sp, $sp, 4
+	lw    $v0, 4($sp)	#POP
+	addu  $sp, $sp, 4
+.L1:
+	lw    $ra, 0($fp)	#Load ra
+	move  $t0, $fp		#Save control link
+	lw    $fp, -4($fp)	#Restore FP
+	move  $sp, $t0
+	jr    $ra		#Function exit finished
+	.text
+_f2:
+	sw    $ra, 0($sp)	#PUSH
+	subu  $sp, $sp, 4
+	sw    $fp, 0($sp)	#PUSH
+	subu  $sp, $sp, 4
+	addu  $fp, $sp, 8
+	subu  $sp, $sp, -4		#Function entry finished
+	jal   _f1
+	sw    $v0, 0($sp)	#PUSH
+	subu  $sp, $sp, 4
+	lw    $v0, 4($sp)	#POP
+	addu  $sp, $sp, 4
+	jal   _g
+	sw    $v0, 0($sp)	#PUSH
+	subu  $sp, $sp, 4
+	lw    $v0, 4($sp)	#POP
+	addu  $sp, $sp, 4
+.L2:
+	lw    $ra, 0($fp)	#Load ra
+	move  $t0, $fp		#Save control link
+	lw    $fp, -4($fp)	#Restore FP
+	move  $sp, $t0
+	jr    $ra		#Function exit finished
+	.text
+	.globl main
+main:
+__start:
+	sw    $ra, 0($sp)	#PUSH
+	subu  $sp, $sp, 4
+	sw    $fp, 0($sp)	#PUSH
+	subu  $sp, $sp, 4
+	addu  $fp, $sp, 8
+	subu  $sp, $sp, -4		#Function entry finished
+	jal   _f1
+	sw    $v0, 0($sp)	#PUSH
+	subu  $sp, $sp, 4
+	lw    $v0, 4($sp)	#POP
+	addu  $sp, $sp, 4
+	jal   _g
+	sw    $v0, 0($sp)	#PUSH
+	subu  $sp, $sp, 4
+	lw    $v0, 4($sp)	#POP
+	addu  $sp, $sp, 4
+	jal   _f2
+	sw    $v0, 0($sp)	#PUSH
+	subu  $sp, $sp, 4
+	lw    $v0, 4($sp)	#POP
+	addu  $sp, $sp, 4
+.L3:
+	lw    $ra, 0($fp)	#Load ra
+	move  $t0, $fp		#Save control link
+	lw    $fp, -4($fp)	#Restore FP
+	move  $sp, $t0
+	li    $v0, 10
+	syscall		#Exit main function

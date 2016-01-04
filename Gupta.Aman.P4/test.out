@@ -1,0 +1,106 @@
+int x;
+bool flag;
+struct hello{
+    int z;
+    bool y;
+};
+
+int function(int,bool->int)(int para, bool para2) {
+    int local;
+    bool flag;
+    struct hello(hello) st;
+    int term;
+    cout << "test decls";
+    flag(bool) = true;
+    para(int) = (local(int) + term(int));
+    para(int) = (local(int) - term(int));
+    para(int) = (local(int) * term(int));
+    para(int) = (local(int) / term(int));
+    para(int) = (!local(int));
+    para(int) = (local(int) && term(int));
+    para(int) = (local(int) || term(int));
+    flag(bool) = (local(int) == term(int));
+    flag(bool) = (local(int) != term(int));
+    flag(bool) = (local(int) > term(int));
+    flag(bool) = (local(int) < term(int));
+    flag(bool) = (local(int) >= term(int));
+    flag(bool) = (local(int) <= term(int));
+    para(int) = (-local(int));
+    para(int) = ((-local(int)) + term(int));
+    para(int) = (local(int) - (-(local(int) / term(int))));
+    para(int) = (local(int) = term(int));
+    para(int) = (local(int) = (local(int) = term(int)));
+    para(int) = ((local(int) - ((local(int) * local(int)) / local(int))) + local(int));
+    para(int) = (local(int) = ((local(int) + ((local(int) * local(int)) / local(int))) - local(int)));
+    local(int)++;
+    term(int)--;
+    (st(hello)).z(int) = 0;
+    (st(hello)).y(bool) = true;
+    if ((para(int) == local(int))) {
+    }
+    if (true) {
+        int tstIfDecl;
+        int tstIfDecl1;
+        tstIfDecl(int) = tstIfDecl1(int);
+    }
+    if (false) {
+        int testIfDecl;
+        bool tstIfDeclBool;
+    }
+    if ((local(int) < term(int))) {
+        bool tstIfElseDecl;
+        para(int) = (local(int) || term(int));
+    }
+    else {
+        bool tstIfElseDecl;
+        para(int) = (local(int) || term(int));
+    }
+    while ((local(int) > term(int))) {
+    }
+    while ((local(int) <= term(int))) {
+        int tstWhileDecl;
+        bool tstWhileDeclBool;
+        cin >> term(int);
+    }
+    while (true) {
+    }
+    while (false) {
+        int tstRecursive;
+        while (true) {
+            cout << "second level";
+            if (true) {
+                term(int)++;
+                cout << "should be stmts";
+                local(int) = term(int);
+            }
+        }
+    }
+    cout << "test return";
+    return (term(int) + local(int));
+    return;
+}
+
+int fnRec(int,bool->int)(int para1, bool para2) {
+    function(int,bool->int)(para1(int), para1(int));
+}
+
+bool fnBool(bool->bool)(bool paraB) {
+    paraB(bool) = false;
+    return paraB(bool);
+}
+
+void fnVoid(->void)() {
+}
+
+void tstOtherFunction(->void)() {
+    if (true) {
+        fnVoid(->void)();
+        while (true) {
+            fnVoid(->void)();
+        }
+    }
+}
+
+void tstMulFuncParams(int,bool,int,int->void)(int param1, bool param2, int param3, int param4) {
+}
+

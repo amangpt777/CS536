@@ -1,0 +1,49 @@
+//Test for reserved words
+int x;
+
+int bool true false while return void struct cin cout if else
+
+//Test for integer literal
+123
+
+//Test for PLUS and PLUSPLUS
++ ++
+
+//Test for an identifier
+x
+
+//Test for a comment
+//
+
+//Test for a comment with #
+#
+//Test for unterminated string literal and char number and line number
+"lrhflkm
+
+//Test for valid escape character and valid string literal
+"\?"
+
+//Test for bad escaped character valid string literal and char number and line number
+"kjhfn\"
+
+//Test for bad escaped character and unterminated string literal and char number and line number
+"jsalfl\
+
+//Test for a valid complex string literal
+"\\/n\n\"?\\dadada/*"
+
+//Test for a reserved word and an overflow integer in same line
+int 1234567898765456
+
+//Test for a valid expression having reserved word and identifiers and a PLUS
+int a + b;
+
+//Test for one of the one character symbol
+{
+
+//Test for one of the two character symbol
+>=
+
+//Testing not
+!
+

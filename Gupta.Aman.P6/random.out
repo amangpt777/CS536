@@ -1,0 +1,23 @@
+int x;
+void g() {
+    x(int) = 4;
+}
+
+void f1() {
+    int x;
+    g(->void)();
+}
+
+void f2() {
+    int x;
+    f1(->void)();
+    g(->void)();
+}
+
+void main() {
+    int x;
+    f1(->void)();
+    g(->void)();
+    f2(->void)();
+}
+

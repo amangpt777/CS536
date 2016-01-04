@@ -1,0 +1,111 @@
+int x;
+bool flag;
+
+struct hello{
+	int z;
+	bool y;
+};
+
+
+int function(int para, bool para2){
+	int local;
+	bool flag;
+	struct hello st;
+	int term;
+	cout <<	"test decls";
+	flag = true;
+	para = local + term;
+	para = local - term;
+	para = local * term;
+	para = local / term;
+	para = !local;
+	para = local && term;
+	para = local || term;
+	flag = local == term;
+	flag = local != term;
+	flag = local >  term;
+	flag = local <  term;
+	flag = local >= term;
+	flag = local <= term;
+	para = -local;
+	para = -local + term;
+	para = local - -local /term;
+	para = local = term;
+	para = local = local = term;
+	para = local-local*local/local+local;
+	para = local =  local + local *local / local -local;
+	local++;
+	term --;
+	st.z = 0;
+	st.y = true;
+
+	if(para == local) {}
+
+	if(true){
+		int tstIfDecl;
+		int tstIfDecl1;
+		tstIfDecl = tstIfDecl1;
+	}
+	if(false){
+		int testIfDecl;
+		bool tstIfDeclBool;
+	}
+	if(local < term){
+		bool tstIfElseDecl;
+		para = local || term;
+	} else {
+		bool tstIfElseDecl;
+		para = local || term;
+	}
+		
+	while(local >term){
+	}
+	
+	while(local <= term){
+		int tstWhileDecl;
+		bool tstWhileDeclBool;
+		cin >> term;
+	}
+
+	while(true){}
+	while(false){
+		int tstRecursive;
+		while(true){
+			cout << "second level";
+			if(true){
+				term++;
+				cout <<  "should be stmts";
+				local = term;
+			}
+		}	
+	}
+	
+	cout << "test return";
+	return term+local;
+	return ;
+}
+
+int fnRec(int para1, bool para2){
+	function(para1, para1);
+}
+
+bool fnBool(bool paraB){
+	paraB = false;
+	return paraB;
+}
+
+void fnVoid(){
+}
+
+void tstOtherFunction(){
+	if(true){
+		fnVoid();
+		while(true){
+			fnVoid();
+		}
+	}
+}
+
+void tstMulFuncParams(int param1, bool param2, int param3, int param4){
+}
+

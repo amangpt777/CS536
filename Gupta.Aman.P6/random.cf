@@ -1,0 +1,22 @@
+int x;
+void g() {
+  x = 4;
+}
+
+void f1() {
+  int x;
+  g();
+}
+
+void f2() {
+  int x;
+  f1();
+  g();
+}
+
+void main() {
+  int x;
+  f1();
+  g();
+  f2();
+}

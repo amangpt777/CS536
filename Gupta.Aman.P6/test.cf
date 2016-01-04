@@ -1,0 +1,41 @@
+bool b;
+
+int foo(int x) {
+    x = x + 1;
+    x = x - 1;
+    while (x > 0) {
+        x = x - 1;
+    }
+
+    x = x * 2;
+    return x;
+}
+
+bool foo_bool(bool y) {
+    y = false;
+    return y;
+}
+
+void main() {
+    int a;
+    a = 4;
+    a = foo(a);
+    b = true;
+    if (b) {
+        cout << "hi i am in if";
+    }
+    else {
+        cout << "hi i should not be here";
+    }
+
+    b = foo_bool(b);
+    if (b) {
+        cout << "hi i am in if after foo_bool call";
+    }
+    else {
+        cout << "hi i should not be here";
+    }
+    cout << "Hello world!";
+    cout << "\n";
+    cin >> b;
+}
